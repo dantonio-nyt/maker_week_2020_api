@@ -1,2 +1,5 @@
 .idea
 __pycache__/
+.DS_Store
+venv/
+first_round_results.txt
