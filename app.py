@@ -14,13 +14,11 @@ def hello():
 
 @app.route("/api/predict", methods = ['POST'])
 def predict():
-    res = request.json
-    print(res)
+    response = request.json
     # get the json from the request
     # convert the json
     # pass obj into the function
-    # return service.predict()
-    return "Hit!"
+    return service.predict(response)
 
 
 if __name__ == "__main__":
